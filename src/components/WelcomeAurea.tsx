@@ -1,4 +1,41 @@
 import { useEffect, useState } from "react";
+import a_curso_1 from "@/assets/aurea/curso-1.jpg.asset.json";
+import a_curso_2 from "@/assets/aurea/curso-2.jpg.asset.json";
+import a_curso_3 from "@/assets/aurea/curso-3.jpg.asset.json";
+import a_curso_4 from "@/assets/aurea/curso-4.jpg.asset.json";
+import a_curso_5 from "@/assets/aurea/curso-5.jpg.asset.json";
+import a_curso_6 from "@/assets/aurea/curso-6.jpg.asset.json";
+import a_curso_7 from "@/assets/aurea/curso-7.jpg.asset.json";
+import a_curso_8 from "@/assets/aurea/curso-8.jpg.asset.json";
+import a_curso_9 from "@/assets/aurea/curso-9.jpg.asset.json";
+import a_curso_10 from "@/assets/aurea/curso-10.jpg.asset.json";
+import a_curso_11 from "@/assets/aurea/curso-11.jpg.asset.json";
+import a_curso_12 from "@/assets/aurea/curso-12.jpg.asset.json";
+import a_curso_13 from "@/assets/aurea/curso-13.jpg.asset.json";
+import a_curso_14 from "@/assets/aurea/curso-14.jpg.asset.json";
+import a_curso_15 from "@/assets/aurea/curso-15.jpg.asset.json";
+import a_curso_16 from "@/assets/aurea/curso-16.jpg.asset.json";
+import a_curso_17 from "@/assets/aurea/curso-17.jpg.asset.json";
+import a_curso_18 from "@/assets/aurea/curso-18.jpg.asset.json";
+import a_curso_19 from "@/assets/aurea/curso-19.jpg.asset.json";
+import a_aurea_logo_png from "@/assets/aurea/aurea-logo.png.asset.json";
+import a_aurea_seal_png from "@/assets/aurea/aurea-seal.png.asset.json";
+import a_ementa_aurea_pdf from "@/assets/aurea/ementa-aurea.pdf.asset.json";
+import a_galeria_1_jpg from "@/assets/aurea/galeria-1.jpg.asset.json";
+import a_galeria_10_jpg from "@/assets/aurea/galeria-10.jpg.asset.json";
+import a_galeria_11_jpg from "@/assets/aurea/galeria-11.jpg.asset.json";
+import a_galeria_13_jpg from "@/assets/aurea/galeria-13.jpg.asset.json";
+import a_galeria_14_jpg from "@/assets/aurea/galeria-14.jpg.asset.json";
+import a_galeria_2_jpg from "@/assets/aurea/galeria-2.jpg.asset.json";
+import a_galeria_3_jpg from "@/assets/aurea/galeria-3.jpg.asset.json";
+import a_galeria_4_jpg from "@/assets/aurea/galeria-4.jpg.asset.json";
+import a_galeria_5_jpg from "@/assets/aurea/galeria-5.jpg.asset.json";
+import a_galeria_6_jpg from "@/assets/aurea/galeria-6.jpg.asset.json";
+import a_galeria_7_jpg from "@/assets/aurea/galeria-7.jpg.asset.json";
+import a_galeria_8_jpg from "@/assets/aurea/galeria-8.jpg.asset.json";
+import a_galeria_9_jpg from "@/assets/aurea/galeria-9.jpg.asset.json";
+import a_professora_2_jpg from "@/assets/aurea/professora-2.jpg.asset.json";
+import a_professora_jpg from "@/assets/aurea/dra-eveline.png.asset.json";
 import {
   Sparkles,
   Check,
@@ -66,29 +103,41 @@ const conteudo = [
   "Texturização",
   "Acabamento e polimento",
   "Controle de brilho",
-  "Fotografia e apresentação de casos",
 ];
 
 const galeria = [
-  { src: "/galeria-1.jpg", alt: "Demonstração — Dra. Eveline e aluna" },
-  { src: "/galeria-2.jpg", alt: "Orientação prática" },
-  { src: "/galeria-3.jpg", alt: "Acompanhamento individual" },
-  { src: "/galeria-4.jpg", alt: "Aluna em prática hands-on" },
-  { src: "/galeria-5.jpg", alt: "Estratificação em resina" },
-  { src: "/galeria-6.jpg", alt: "Aplicação da faceta — detalhe" },
-  { src: "/galeria-7.jpg", alt: "Escultura em resina — detalhe" },
-  { src: "/galeria-8.jpg", alt: "Turma em aula" },
-  { src: "/galeria-9.jpg", alt: "Direcionamento clínico" },
-  { src: "/galeria-10.jpg", alt: "Dra. Eveline em demonstração" },
-  { src: "/galeria-11.jpg", alt: "Prática guiada" },
-  { src: "/galeria-12.jpg", alt: "Buffet Áurea" },
-  { src: "/galeria-13.jpg", alt: "Boas-vindas Áurea" },
-  { src: "/galeria-14.jpg", alt: "Kit de boas-vindas Áurea" },
-  { src: "/galeria-15.jpg", alt: "Coffee break" },
-  { src: "/galeria-16.jpg", alt: "Mesa de apoio" },
-  { src: "/galeria-17.jpg", alt: "Mesa de doces" },
-  { src: "/galeria-18.jpg", alt: "Buffet — detalhes" },
-  { src: "/galeria-19.jpg", alt: "Coffee break — detalhes" },
+  { src: a_galeria_1_jpg.url, alt: "Demonstração — Dra. Eveline e aluna" },
+  { src: a_galeria_2_jpg.url, alt: "Orientação prática" },
+  { src: a_galeria_3_jpg.url, alt: "Acompanhamento individual" },
+  { src: a_galeria_4_jpg.url, alt: "Aluna em prática hands-on" },
+  { src: a_galeria_5_jpg.url, alt: "Estratificação em resina" },
+  { src: a_galeria_6_jpg.url, alt: "Aplicação da faceta — detalhe" },
+  { src: a_galeria_7_jpg.url, alt: "Escultura em resina — detalhe" },
+  { src: a_galeria_8_jpg.url, alt: "Turma em aula" },
+  { src: a_galeria_9_jpg.url, alt: "Direcionamento clínico" },
+  { src: a_galeria_10_jpg.url, alt: "Dra. Eveline em demonstração" },
+  { src: a_galeria_11_jpg.url, alt: "Prática guiada" },
+  { src: a_galeria_13_jpg.url, alt: "Boas-vindas Áurea" },
+  { src: a_galeria_14_jpg.url, alt: "Kit de boas-vindas Áurea" },
+  { src: a_curso_1.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_2.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_3.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_4.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_5.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_6.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_7.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_8.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_9.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_10.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_11.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_12.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_13.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_14.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_15.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_16.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_17.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_18.url, alt: "Imersão Áurea — momento do curso" },
+  { src: a_curso_19.url, alt: "Imersão Áurea — momento do curso" },
 ];
 
 const navLinks = [
@@ -141,7 +190,7 @@ const WelcomeAurea = () => {
               <div className="env-pocket" />
               <div className="env-flap" />
               <img
-                src="/aurea-seal.png"
+                src={a_aurea_seal_png.url}
                 alt="Lacre Áurea — clique para abrir"
                 className="wax-seal"
                 onError={hideOnError}
@@ -168,7 +217,7 @@ const WelcomeAurea = () => {
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="flex items-center justify-between gap-4 rounded-full border border-border/70 bg-[hsl(var(--cream)/0.82)] px-3.5 py-2 shadow-soft backdrop-blur-md">
             <a href="#topo" className="flex items-center gap-3">
-              <img src="/aurea-logo.png" alt="Áurea" className="logo-coin h-[46px] w-[46px]" onError={hideOnError} />
+              <img src={a_aurea_logo_png.url} alt="Áurea" className="logo-coin h-[46px] w-[46px]" onError={hideOnError} />
               <span className="hidden font-script text-2xl leading-none text-primary sm:block">Áurea</span>
             </a>
 
@@ -201,13 +250,12 @@ const WelcomeAurea = () => {
             </span>
 
             <p className="mt-8 text-sm font-medium uppercase tracking-luxe text-[hsl(var(--gold-dark)/0.85)]">
-              Você faz parte da
+              Seja bem-vindo(a) à experiência
             </p>
             <h1 className="mt-1 font-serif text-7xl font-semibold leading-[0.92] tracking-tight sm:text-8xl">
-              <span className="block text-gradient-gold">TURMA</span>
               <span className="block text-gradient-gold">ÁUREA</span>
             </h1>
-            <p className="mt-5 font-serif text-2xl uppercase tracking-[0.4em] text-foreground/85 sm:text-3xl">
+            <p className="mt-5 font-serif text-xl uppercase tracking-[0.3em] text-foreground/85 sm:text-3xl">
               Lentes Naturais
             </p>
 
@@ -231,7 +279,7 @@ const WelcomeAurea = () => {
                 <p className="text-[11px] font-semibold uppercase tracking-luxe text-[hsl(var(--gold-light))]">
                   Inscrição confirmada
                 </p>
-                <p className="font-serif text-xl leading-tight">Você integra a Turma Áurea</p>
+                <p className="font-serif text-xl leading-tight">Seja bem-vindo(a) à experiência Áurea Lentes Naturais</p>
               </div>
             </div>
 
@@ -246,7 +294,7 @@ const WelcomeAurea = () => {
             <div className="frame-gold relative w-full max-w-md rounded-[2rem] p-[3px] shadow-elegant">
               <div className="bg-photo relative aspect-[4/5] w-full overflow-hidden rounded-[1.85rem]">
                 <img
-                  src="/professora.jpg"
+                  src={a_professora_jpg.url}
                   alt="Dra. Eveline Leite"
                   className="h-full w-full object-cover [object-position:50%_16%]"
                   onError={hideOnError}
@@ -408,7 +456,7 @@ const WelcomeAurea = () => {
               </p>
             </div>
             <a
-              href="/ementa-aurea.pdf"
+              href={a_ementa_aurea_pdf.url}
               download="Ementa-Aurea-Lentes-Naturais.pdf"
               className="relative inline-flex shrink-0 items-center gap-2.5 rounded-full bg-gradient-gold px-7 py-3.5 text-sm font-semibold text-primary shadow-gold transition-transform hover:-translate-y-0.5"
             >
@@ -434,7 +482,7 @@ const WelcomeAurea = () => {
             {galeria.map((g) => (
               <figure
                 key={g.src}
-                className="bg-photo group relative min-h-[240px] break-inside-avoid overflow-hidden rounded-2xl shadow-soft"
+                className="bg-photo group relative break-inside-avoid overflow-hidden rounded-2xl shadow-soft"
               >
                 <img
                   src={g.src}
@@ -455,7 +503,7 @@ const WelcomeAurea = () => {
             <div className="frame-gold relative w-full max-w-md rounded-[2rem] p-[3px] shadow-elegant">
               <div className="bg-photo relative aspect-[4/5] w-full overflow-hidden rounded-[1.85rem]">
                 <img
-                  src="/professora-2.jpg"
+                  src={a_professora_2_jpg.url}
                   alt="Dra. Eveline Leite"
                   className="h-full w-full object-cover [object-position:50%_16%]"
                   onError={hideOnError}
@@ -486,7 +534,7 @@ const WelcomeAurea = () => {
         <div className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[hsl(var(--gold)/0.15)] blur-3xl" />
         <div className="relative mx-auto max-w-3xl px-6 text-center">
           <img
-            src="/aurea-logo.png"
+            src={a_aurea_logo_png.url}
             alt="Áurea"
             className="logo-coin mx-auto h-20 w-20 shadow-gold"
             onError={hideOnError}
@@ -511,7 +559,7 @@ const WelcomeAurea = () => {
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
           <div className="grid gap-10 md:grid-cols-3">
             <div>
-              <img src="/aurea-logo.png" alt="Áurea" className="logo-coin h-[50px] w-[50px]" onError={hideOnError} />
+              <img src={a_aurea_logo_png.url} alt="Áurea" className="logo-coin h-[50px] w-[50px]" onError={hideOnError} />
               <p className="mt-5 max-w-xs text-sm leading-relaxed text-[hsl(var(--cream)/0.65)]">
                 Curso premium de facetas em resina, com foco em naturalidade e excelência clínica.
               </p>
